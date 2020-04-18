@@ -1,0 +1,312 @@
+
+// /* lightbox
+//    ========================================================================== */
+
+// .lightbox__{
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 55;
+//   overflow: auto;
+//   display: block;
+
+//   .lightbox__bgclose{
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0,0,0,0.4);
+//     z-index: 5;
+//   }
+
+//   .lightbox__wrap{
+//     position: absolute;
+//     z-index: 10;
+//     left: 0;
+//     right: 0;
+//     top: 84%;
+//     transform: translateY(-50%);
+//     width: 960px;
+//     margin: 0 auto;
+//   }
+
+//   .lightbox__con{
+//     width: 90%;
+//     margin: 0 auto;
+//     background-color: #fff;
+//     height: 80%;
+//     border-top-left-radius: 15px;  
+//     border-top-right-radius: 15px;  
+//   }
+
+//   // lightbox 頭部
+//   .lightbox__con__head{
+//     background-image: url('../images/pop/green_bg.png');
+//     border-top-left-radius: 15px;  
+//     border-top-right-radius: 15px;  
+//     h1{
+//       text-align: center;
+//       padding: 20px 0;
+//       @include text_set(20px,700,#222);
+//       span{
+//         color: #31999a;
+//       }
+//     }
+//   }
+
+//   // lightbox 內容
+//   .lightbox__con__main{
+//     box-sizing: border-box;
+//     padding: 0 32px 32px 32px;
+
+//     .lcm__section{
+
+//       //區塊 title
+//       .lcm__section__title{
+//         text-align: center;
+//         padding: 20px 0 26px;
+
+//         h2{          
+//           @include text_set(20px,700,#222);
+//           display: inline-block;
+//           position: relative;
+
+//           &:after{
+//             content: '';
+//             border-bottom: solid 3px #eee;
+//             position: absolute;
+//             bottom: -8px;
+//             left: 0;
+//             width: 100%;
+//           }
+          
+//           .num{
+//             display: inline-block;
+//             position: relative;
+//             padding-right: 4px;
+//             color: #31999a;
+            
+//             &:after{
+//               content: '';
+//               border-bottom: solid 3px #31999a;
+//               position: absolute;
+//               bottom: -8px;
+//               left: 0;
+//               width: 100%;
+//               z-index: 5;
+//             }
+//           }
+//         }
+//       }
+
+//       //區塊內容 1
+//       .lcm__section__main{
+//         box-sizing: border-box;
+//         background-color: #eeeeee;
+//         padding: 20px 15px;
+
+//         h2{
+//           @include text_set(20px,700,#222);
+//           padding-left: 10px;
+//           margin-bottom: 5px;
+//           position: relative;
+
+//           &:after{
+//             content: '';
+//             display: inline-block;
+//             vertical-align: middle;
+//             border-left: solid 5px #22b39d;
+//             position: absolute;
+//             left: 0;
+//             top: 4px;
+//             width: 5px;
+//             height: 72%;
+//           }
+//         }
+
+//         .case__text{
+//           @include text_set(18px,500,#222);
+//           margin-bottom: 15px;
+//         }
+
+//         .chart{
+//           margin-bottom: 15px;
+//         }
+
+//         .table__bottom__text{
+//           background-color: #e0e0e0;
+//           @include text_set(18px,700,#777);
+//           padding: 12px 19px;
+//         }
+
+//         .list{
+//           margin-top: 12px;
+//           padding-left: 25px;
+//           li{
+//             @include text_set(16px,500,#222);
+//             margin-bottom: 2px;
+//             list-style-type: decimal;
+//             .red{
+//               color: #cd1528;
+//             }
+//           }
+//         }
+//       }
+
+//       //區塊內容 2
+//       .lcm__section__premium{
+//         box-sizing: border-box;
+//         background-color: #e0e0e0;
+//         padding: 10px 25px;
+
+//         p{
+//           @include text_set(16px,700,#222);
+//         }
+
+//         .list{
+//           li{
+//             span{
+
+//             }
+
+//             p{
+//               @include text_set(16px,500,#222);
+//             }
+//           }
+//         }
+//       }
+
+//       table{
+//         width: 100%;
+//         background-color: #fff;
+//         font-size: 20px;
+//         font-weight: 700;
+//         text-align: center;
+
+//       }
+      
+//       // table 樣式1
+//       .lcm__section__record{
+//         margin-bottom: 15px;
+//       }
+
+//       // table 樣式2
+//       .lcm__section__cost{
+//         .w__19p{
+//           width: 19%;
+//         }
+//         .w__27p{
+//           width: 27%;
+//         }
+//         .small__text{
+//           font-size: 15px;
+//           &.green{
+//             color: #017e73;
+//           }
+//           &.yellow{
+//             color: #cd7d00;
+//           }
+//         }
+//         .box__shadow{
+//           box-shadow: inset -5px 0px 0px 0px rgba(0,0,0,0.1);
+//         } 
+
+//         // tr  
+//         tr{
+//           &:nth-child(2){
+//             td{
+//               &:nth-child(1){
+//                 background-color: #f5f5f5;
+//               }
+//             }
+//           }
+//           &:nth-child(3){
+//             background-color: #eeeeee;
+//           }
+//           &:nth-child(4){
+//             td{
+//               &:nth-child(1){
+//                 background-color: #f5f5f5;
+//               }
+//             }
+//           }
+
+//           // th
+//           th{
+//             padding: 12px 0;
+//             color: #fff;
+//             vertical-align: middle;
+
+//             &:nth-child(1){
+//               background-color: #c2c2c2;
+//               font-size: 18px;
+//             }
+//             &:nth-child(2){
+//               background-color: #ff4b5e;
+//             }
+  
+//             &:nth-child(3){
+//               background-color: #61bfb0;
+//             }
+  
+//             &:nth-child(4){
+//               background-color: #ffc31f;
+//             }
+//           }
+
+//           // td
+//           td{
+//             padding: 9px 0;
+//             position: relative;
+//             vertical-align: middle;
+
+//             &:nth-child(1){
+//               font-size: 18px;
+//             }
+
+//             &:nth-child(2){
+//               color: #cd1528;
+//             }
+
+//             &:nth-child(3){
+//               color: #017e73;
+//             }
+
+//             &:nth-child(4){
+//               color: #cd7d00;
+//             }
+
+//             &.set__border{
+//               &:before{
+//                 content: '';
+//                 border-left: solid 2px #ddd;
+//                 position: absolute;
+//                 left: -1px;
+//                 top: 12%;
+//                 height: 76%;
+//               }
+//               &:after{
+//                 content: '';
+//                 border-left: solid 2px #ddd;
+//                 position: absolute;
+//                 right: -1px;
+//                 top: 12%;
+//                 height: 76%;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   // close
+//   .lightbox__close{
+//     position: absolute;
+//     top: -42px;
+//     right: 50px;
+//   }
+// }

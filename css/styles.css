@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/*-------------------------
+        R E S E T
+-------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+ins {
+  text-decoration: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+* {
+  outline: none; }
+
+/*-------------------------
+        R E S E T END
+-------------------------*/
+/*-------------------------
+            var
+-------------------------*/
+/*-------------------------
+          mixin
+-------------------------*/
+/*-------------------------
+          extend
+-------------------------*/
+/*-------------------------
+      function mixin
+-------------------------*/
+html, body {
+  font-family: "微軟正黑體", "Microsoft JhengHei", Arial;
+  font-size: 100%;
+  line-height: 1.5;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto; }
+
+.text-hide {
+  text-indent: -9999px; }
+
+.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+.mobile {
+  display: none; }
+  @media (min-width: 768px) and (max-width: 980px) {
+    .mobile {
+      display: block; } }
+  @media (max-width: 767px) {
+    .mobile {
+      display: block; } }
+
+.desk {
+  display: block; }
+  @media (min-width: 768px) and (max-width: 980px) {
+    .desk {
+      display: none; } }
+  @media (max-width: 767px) {
+    .desk {
+      display: none; } }
+
+.block {
+  display: block; }
+
+.wrap {
+  width: 1300px;
+  margin: 0 auto;
+  position: relative; }
+  @media (min-width: 981px) and (max-width: 1300px) {
+    .wrap {
+      width: 92%; } }
+  @media (min-width: 768px) and (max-width: 980px) {
+    .wrap {
+      width: 92%; } }
+  @media (max-width: 767px) {
+    .wrap {
+      width: 90%; } }
+
+.t-center {
+  width: 100%;
+  text-align: center; }
+
+* {
+  font-family: 'Roboto','微軟正黑體', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  padding: 48px 0 24px 0;
+  border-bottom: 2px solid #000;
+  margin-bottom: 48px; }
+  .header h1 {
+    font-size: 80px;
+    line-height: 90px;
+    font-weight: 400; }
+
+.pic {
+  margin-bottom: 55px; }
+  .pic img {
+    width: 324px;
+    display: block; }
+
+section h2 {
+  font-size: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #000; }
+  section h2 span {
+    font-size: 24px;
+    font-weight: 500;
+    color: #A00404;
+    margin-left: 16px; }
+
+section p {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 400; }
+
+.profile h2 {
+  margin-bottom: 16px; }
+
+.profile .text {
+  margin-bottom: 55px;
+  margin-left: 48px; }
+  .profile .text p {
+    margin-bottom: 24px;
+    position: relative; }
+  .profile .text p:first-child:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #96A9C4;
+    border-radius: 50%;
+    left: -32px;
+    top: 8px; }
+
+.education h2 {
+  margin-bottom: 16px; }
+
+.education .text {
+  margin-bottom: 40px;
+  margin-left: 48px; }
+  .education .text p {
+    padding-bottom: 32px;
+    position: relative; }
+  .education .text p:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #96A9C4;
+    border-radius: 50%;
+    left: -32px;
+    top: 8px; }
+  .education .text p:after {
+    content: '';
+    position: absolute;
+    height: 92%;
+    border-left: 1px solid #96A9C4;
+    left: -24px;
+    top: 16px; }
+  .education .text p:last-of-type:after {
+    display: none; }
+
+.skills, .footer {
+  background-color: #415165; }
+  .skills h2, .skills span, .skills p, .footer h2, .footer span, .footer p {
+    color: #fff; }
+  .skills h2, .footer h2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 40px; }
+
+.skills {
+  padding: 24px 102px 56px 102px;
+  margin-bottom: 79px; }
+  .skills .text {
+    padding-left: 24px;
+    border-left: 1px solid #fff;
+    width: 220px;
+    margin: 0 auto; }
+    .skills .text p {
+      font-weight: 100; }
+    .skills .text p + p {
+      margin-top: 16px; }
+
+.experiment h2 {
+  margin-bottom: 16px; }
+
+.experiment .text {
+  margin-left: 24px;
+  padding-left: 24px;
+  border-left: 1px solid #96A9C4; }
+
+.experiment {
+  margin-bottom: 72px; }
+  .experiment p {
+    font-weight: bold; }
+  .experiment img {
+    margin: 8px 0 8px 0; }
+  .experiment .text-thin {
+    width: 642px;
+    font-size: 20px;
+    font-weight: normal; }
+  .experiment .text-thin ~ p {
+    margin-top: 32px; }
+  .experiment p:last-child {
+    margin-top: 0; }
+
+.footer .footer-inner {
+  padding: 31px 102px 48px 102px; }
+
+.footer p {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 100; }
+  .footer p a {
+    color: #ffffff; }
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .footer ul li {
+    width: 48px; }
+  .footer ul li + li {
+    margin-left: 24px; }

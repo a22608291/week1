@@ -1,0 +1,98 @@
+
+// @keyframes ice_act{
+//   0%{
+//     transform: translateX(8px) translateY(20px);
+//   }
+//   50%{
+//     transform: translateX(0px) translateY(20px);
+//   }
+//   100%{
+//     transform: translateX(8px) translateY(20px);
+//   }
+// }
+// @include RWD(desktop-normal){
+//   0%{
+//     transform: translateX(8px) translateY(-15px);
+//   }
+//   50%{
+//     transform: translateX(8px) translateY(-15px);
+//   }
+//   100%{
+//     transform: translateX(8px) translateY(-15px);
+//   }
+// }
+
+// @include RWD(pad){
+//   0%{
+//     transform: translateX(8px) translateY(30px);
+//   }
+//   50%{
+//     transform: translateX(8px) translateY(30px);
+//   }
+//   100%{
+//     transform: translateX(8px) translateY(30px);
+//   }
+// }
+// @include RWD(mobile){
+//   0%{
+//     transform: translateX(8px) translateY(-20px);
+//   }
+//   50%{
+//     transform: translateX(8px) translateY(-20px);
+//   }
+//   100%{
+//     transform: translateX(8px) translateY(-20px);
+//   }
+// }
+
+// @keyframes women_act{
+//   0%{
+//     background-image: url('../images/people/women.png');
+//   }
+//   50%{
+//     background-image: url('../images/people/women_act.png');
+//   }
+//   100%{
+//     background-image: url('../images/people/women.png');
+//   }
+// }
+
+// @keyframes men_act{
+//   0%{
+//     background-image: url('../images/people/men.png');
+//   }
+//   50%{
+//     background-image: url('../images/people/men_act.png');
+//   }
+//   100%{
+//     background-image: url('../images/people/men.png');
+//   }
+// }
+
+// $orange_light: lighten(orange,5%);
+
+// @keyframes btn_ani{
+//   0%{
+//     background: #f6d844;
+//   }
+//   50%{
+//     background: $orange_light;
+//   }
+//   100%{
+//     background: #f6d844;
+//   }
+// }
+
+// @keyframes island_ani{
+//   0%{
+//     transform: translate(0,0);
+//   }
+//   50%{
+//     transform: translate(5px,5px);
+//   }
+//   100%{
+//     transform: translate(0,0);
+//   }
+// }
+
+

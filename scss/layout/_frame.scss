@@ -1,0 +1,67 @@
+
+
+html, body{
+  font-family: "微軟正黑體", "Microsoft JhengHei", Arial;
+  font-size:  100%; 
+  line-height: 1.5;
+  position: relative;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+.text-hide{
+  text-indent: -9999px;
+}
+
+.infinite{
+  animation-iteration-count:infinite;
+}
+
+.mobile{
+  display: none;
+  @include RWD(pad){
+    display: block;
+  }
+  @include RWD(mobile){
+    display: block;
+  }
+}
+
+.desk{
+  display: block;
+  @include RWD(pad){
+    display: none;
+  }
+  @include RWD(mobile){
+    display: none;
+  }
+}
+
+.block{
+  display: block;
+}
+
+.wrap{
+  width: $wrap;
+  margin: 0 auto;
+  position: relative;
+  @include RWD(desktop-normal){
+    width: 92%;
+  }
+  @include RWD(pad){
+    width: 92%;
+  }
+  @include RWD(mobile){
+    width: 90%;
+  }
+}
+
+.t-center{
+  width: 100%;
+  text-align: center;
+}
